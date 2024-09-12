@@ -1,0 +1,97 @@
+.big{
+    
+    width: 100%;
+    height: 600px;
+    
+        background-color: #00274d; /* Example color for div1 */
+    
+
+
+    border-color: black;
+}
+
+#small1{
+    font-size: 45px;
+    background-color: #00274d;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 200px;
+   
+   border-top-right-radius : 10px;   
+   border-top-left-radius : 10px;
+   padding-top: 10px;
+}
+#small2{
+    padding-top: 30px;
+    background-color: white;
+    width: 94%;
+    height: 350px;
+   margin-left: 3%;
+   margin-right: 3%;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+#login_div {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    color: black;
+    margin-left: 35%;
+    margin-right: 50%;
+    border-width: 10px;
+    border-color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+#button1{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 4px;
+}
+.colour{
+    color: white;
+}
+#button2{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 4px;
+}
+#user{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 60px;
+    padding-top: 15px;
+}
+#username{
+    background-color: grey;
+    
+    border-radius: 5px;;
+}
+#password{
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+}
+#submit{
+    width: 70px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 20%;
+
+}

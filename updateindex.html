@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6mq5kcIaYmx0bd8HK5Ho1zZjz3DNOHxIY1vEBOPrSZzZJBzy1Nw4eFF9a7eFw39jrbxkQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #001e44;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .auth-buttons a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+        }
+
+        .navbar .auth-buttons a:hover {
+            opacity: 0.9;
+        }
+
+        /* Dashboard Content */
+        .dashboard-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .section {
+            width: 300px;
+            height: 250px;
+            position: relative;
+            background-color: #fff;
+            border-radius: 10px;
+            border: 2px solid #001e44;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: brightness(1.2); /* Increases brightness of the image */
+        }
+
+        .section-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 30, 68, 0.7); /* Dark overlay */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section i {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #001e44;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        /* Section hover effect */
+        .section:hover .section-content {
+            background: rgba(0, 30, 68, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Dashboard</div>
+        <div class="auth-buttons">
+            <a href="#" class="score">Your Score</a> <!-- Added Your Score button -->
+            <a href="#" class="logout">Logout</a>
+        </div>
+    </div>
+    
+
+    <div class="dashboard-content">
+        <!-- User Details Section -->
+        <div class="section" id="userDetails" onclick="window.location.href='userdetail.html'">
+            <img src="uderphoto.jpeg" alt="User Photo">
+            <div class="section-content">
+                <i class="fas fa-user"></i>
+                <h2>User Profile</h2>
+            </div>
+        </div>
+
+        <!-- Job Recommendations Section -->
+        <div class="section" id="jobRecommendations" onclick="window.location.href='#jobRecommendationsPage'">
+            <img src="download.jpeg" alt="Job Recommendations">
+            <div class="section-content">
+                <i class="fas fa-briefcase"></i>
+                <h2>Job Recommendations</h2>
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skill Gap Analysis Section -->
+        <div class="section" id="skillGapAnalysis" onclick="window.location.href='#skillGapAnalysisPage'">
+            <img src="course.jpeg" alt="Skill Gap Analysis">
+            <div class="section-content">
+                <i class="fas fa-chart-bar"></i>
+                <h2>Skill Gap Analysis</h2>
+            </div>
+        </div>
+
+        <!-- Suggested Training Courses Section -->
+        <div class="section" id="trainingCourses" onclick="window.location.href='#trainingCoursesPage'">
+            <img src="traing.jpeg" alt="Training Courses">
+            <div class="section-content">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>Training Courses</h2>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

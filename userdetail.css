@@ -1,0 +1,125 @@
+/* Styling for the color bar at the top (full-width, 1/4 screen height) */
+.color-bar {
+    background-color: #00274d; /* Dark blue color */
+    height: 25vh; /* 1/4 of the screen height (25% of viewport height) */
+    width: 100%; /* Full screen width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Vertical color bars on the left and right */
+.vertical-bar {
+    position: fixed;
+    background-color: #00274d; /* Same dark blue color */
+    width: 5vh; /* The width of the vertical bars */
+    height: 100vh; /* Full height of the viewport */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Left vertical bar */
+.left-bar {
+    left: 0;
+}
+
+/* Right vertical bar */
+.right-bar {
+    right: 0;
+}
+
+/* Flexbox setup for centering the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items from the top */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+/* Container for the form, moved downward using margin-top */
+.form-container {
+    margin-top: 17.5vh; /* Adjusted to move the container down to almost half the height of the color bar */
+    width: 50%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 2000; /* Ensure the form is on top of the color bar */
+    max-width: 600px; /* Added max-width for responsiveness */
+}
+
+/* Form title styling */
+h2 {
+    text-align: center;
+    color: #00274d;
+    font-weight: bold; /* Make text bold */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00274d; /* Color for label text */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="url"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px; /* For larger input area */
+}
+
+/* Upload Button */
+.upload-btn {
+    background-color: #00274d; /* Dark blue color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #004080; /* Lighter shade of blue on hover */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold; /* Make text bold */
+}
+
+.submit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Added shadow to the form container */
+.form-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

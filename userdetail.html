@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Career Details Form</title>
+    <link rel="stylesheet" href="userdetail.css">
+</head>
+<body>
+
+    <!-- Color bar section at the top (full-width, 1/4 screen height) -->
+    <div class="color-bar"></div>
+
+    <!-- Vertical color bars on the left and right -->
+    <div class="vertical-bar left-bar"></div>
+    <div class="vertical-bar right-bar"></div>
+
+    <div class="form-container">
+        <h2>User Career Details Form</h2>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+
+            <!-- Resume/CV -->
+            <div class="form-group">
+                <label for="resume">Resume/CV:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('resume').click()">Upload Document</button>
+            </div>
+
+            <!-- Cover Letter -->
+            <div class="form-group">
+                <label for="coverLetter">Cover Letter:</label>
+                <input type="file" id="coverLetter" name="coverLetter" accept=".pdf, .doc, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('coverLetter').click()">Upload Document</button>
+            </div>
+
+            <!-- Certificates and Licenses -->
+            <div class="form-group">
+                <label for="certificates">Certificates and Licenses:</label>
+                <input type="file" id="certificates" name="certificates" multiple accept=".pdf, .jpg, .png, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('certificates').click()">Upload Document</button>
+            </div>
+
+            <!-- Work Samples/Portfolio -->
+            <div class="form-group">
+                <label for="workSamples">Work Samples/Portfolio:</label>
+                <input type="file" id="workSamples" name="workSamples" accept=".pdf, .jpg, .png, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('workSamples').click()">Upload Document</button>
+            </div>
+
+            <!-- Portfolio Link -->
+            <div class="form-group">
+                <label for="portfolioLink">Portfolio Link:</label>
+                <input type="url" id="portfolioLink" name="portfolioLink" placeholder="https://your-portfolio.com">
+            </div>
+
+            <!-- Project Descriptions -->
+            <div class="form-group">
+                <label for="projectDescriptions">Project Descriptions:</label>
+                <input type="file" id="projectDescriptions" name="projectDescriptions" accept=".pdf, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('projectDescriptions').click()">Upload Document</button>
+            </div>
+
+            <!-- Skills Assessment Tests -->
+            <div class="form-group">
+                <label for="skillsAssessment">Skills Assessment Tests:</label>
+                <input type="file" id="skillsAssessment" name="skillsAssessment" accept=".pdf, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('skillsAssessment').click()">Upload Document</button>
+            </div>
+
+            <!-- References/Recommendations -->
+            <div class="form-group">
+                <label for="references">References/Recommendations:</label>
+                <input type="file" id="references" name="references" accept=".pdf, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('references').click()">Upload Document</button>
+            </div>
+
+            <!-- Personal Statement/Objective -->
+            <div class="form-group">
+                <label for="personalStatement">Personal Statement/Objective:</label>
+                <textarea id="personalStatement" name="personalStatement" placeholder="Write your personal statement or career objective..."></textarea>
+            </div>
+
+            <!-- Self-Assessment Questionnaires -->
+            <div class="form-group">
+                <label for="selfAssessment">Self-Assessment Questionnaires:</label>
+                <input type="file" id="selfAssessment" name="selfAssessment" accept=".pdf, .docx" hidden>
+                <button type="button" class="upload-btn" onclick="document.getElementById('selfAssessment').click()">Upload Document</button>
+            </div>
+
+            <!-- LinkedIn Profile -->
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/your-profile">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

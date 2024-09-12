@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="profile_page.css">
+</head>
+<body>
+  <div class="big">
+    <div id="small1">
+      <h1>Score Efficiency</h1>
+    </div>
+    <div id="small2">
+      <div id="login_div">
+        
+        <button type="button" id="button2"><a href="sign_up.html" class="colour">Sign up</a></button>
+        <div id="user">
+          <p>Enter user name</p>
+          <input type="text" placeholder="user name" id="username">
+          <p>Enter password</p>
+          <input type="password" placeholder="password" id="password">
+          <input type="submit" id="submit" value="Login">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', function() {
+      // Get the username and password (if you need validation)
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      // Redirect to the dashboard page
+      window.location.href = 'updateindex.html'; // Replace 'dashboard.html' with your actual dashboard file
+    });
+  </script>
+</body>
+</html>
